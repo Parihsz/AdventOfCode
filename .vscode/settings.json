@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.luau": "luau",
+        "iostream": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "fstream": "cpp",
+        "functional": "cpp",
+        "ostream": "cpp"
+    }
+}
