@@ -5,13 +5,14 @@
 #include <string>
 #include <cmath>
 #include <stack>
+#include <chrono>
 using namespace std;
 
 int main() {
     ifstream file("inputdata.txt");
     string line;
     long long res=0;
-
+    auto start = chrono::high_resolution_clock::now();
     while (getline(file, line)) {
         stringstream ss(line);
         string temp;
@@ -44,6 +45,9 @@ int main() {
             s.push({i+1,stoll(to_string(current)+to_string(nums[i+1]))});
         }
     }
+    auto end = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
     cout<<res<<endl;
+    cout<<"Time: "<<duration.count()<<" milliseconds"<<endl;
     return 0;
 }
