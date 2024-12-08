@@ -24,7 +24,15 @@
         "tuple": "cpp",
         "type_traits": "cpp",
         "utility": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "numeric": "cpp",
+        "list": "cpp",
+        "chrono": "cpp",
+        "barrier": "cpp",
+        "random": "cpp",
+        "latch": "cpp",
+        "semaphore": "cpp",
+        "valarray": "cpp"
     },
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#fdddf7",
